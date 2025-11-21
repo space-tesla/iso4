@@ -1,0 +1,19 @@
+<!-- Q.1) Fetch the details using ng-repeat in AngularJS -->
+
+<div style="max-width:600px;margin:auto;font-family:Arial;">
+  <h3>Person Details</h3>
+
+  <table border="1" width="100%" cellpadding="8">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+
+    <tr *ngFor="let p of people">
+      <td>{{ p.name }}</td>
+      <td>{{ p.age }}</td>
+      <td>{{ p.city }}</td>
+    </tr>
+  </table>
+</div>
